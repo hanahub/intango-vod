@@ -1,9 +1,4 @@
 jQuery(document).ready(function($) {
-  
-  setTimeout(startVideo, 10);
-  function startVideo() {
-
-  }
 
   var counter = 0;
   var width = $(".play-bar-body").width();
@@ -11,7 +6,6 @@ jQuery(document).ready(function($) {
   var width2 = 0;
 
   move_buffering();
-
   function move_buffering() {
     var id = setInterval(frame_buffering, 200);
     function frame_buffering() {
@@ -45,5 +39,4 @@ jQuery(document).ready(function($) {
     }
   }
 
-  // $(".country_select").select2({});
 });

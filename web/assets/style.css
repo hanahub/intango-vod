@@ -65,7 +65,7 @@ input[type="button"] {
   background: #b1b1b1;
   outline: none;
   border: 0px;
-  border-radius: 3px;
+  border-radius: 4px;
   height: 34px;
 }
 .search-icon {
@@ -73,7 +73,7 @@ input[type="button"] {
   height: 20px;
   fill: #2d2d2d;      
   position: absolute;
-  right: 8px;
+  right: 7px;
   top: 7px;
 }
 .android_video {
@@ -150,6 +150,7 @@ input[type="button"] {
   padding: 60px 40px 45px 40px;
 }
 .msg {
+  width: 338px;
   font-size: 18px;
 }
 .msg p.reg_time {
@@ -167,6 +168,7 @@ a.continue_btn {
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
+  display: inline-block;
 }
 a.continue_btn:hover {
   opacity: 0.7;
@@ -182,16 +184,117 @@ a.continue_btn:hover {
   left: 0px;
   background-color: rgba(0,0,0,0.5);
 }
-@media screen and (max-width: 1024px) {
-  
+.mobile_menu {
+  display: none;
+  width: 34px;
+  height: 34px;
+  background: #b1b1b1;
+  border-radius: 4px;
+  padding: 6px;
 }
-@media screen and (max-width: 900px) {
-  
+.icon-bars {
+  height: 22px;
 }
-
+@media screen and (max-width: 768px) {
+  header {
+    margin-bottom: 4px;
+  }
+  .mobile_menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .search_wrap {
+    margin-right: 12px;
+  }
+  .search_input {
+    width: 34px;
+    float: right;
+  }
+  .control {
+    width: 46px;
+  }
+  a.continue_btn {
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+  .msg {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .pop {
+    width: 76%;
+    max-width: 100%;
+    top: 8%;
+    left: 12%;
+  }
+}
 @media screen and (max-width: 680px) {
-  
+  .pop-inner {
+    padding: 6%;
+  }
 }
 @media screen and (max-width: 480px) {
-  
+  .controls {
+    height: 33px;
+    border-top: 0px;
+  }
+  .icon-gear {
+    display: none;
+  }
+  .control.icon-volume-up > svg {
+    height: 16px;
+    margin-top: -3px;
+  }
+  .control {
+    width: 33px;
+    padding: 11px 0px;
+  }
+  .control > svg {
+    height: 11px;
+  }
+  .icon-hd > span {
+    font-size: 14px;
+    height: 11px;
+    line-height: 11px;
+  }
+  .play-bar-body {
+    height: 11px;
+    border-radius: 2px;
+  }
+  .progress-bar {
+    padding: 12px 12px;
+  }
+  .msg {
+    width: 262px;
+    font-size: 14px;
+  }
+  .pop {
+    width: 88%;
+    left: 6%;
+    top: 4%;
+  }
+  .pop-inner {
+    padding: 20px 20px;
+  }
+  a.continue_btn {
+    font-size: 14px;
+    padding: 9px 25px 10px;
+  }
+  .msg p.reg_time {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .pop {
+    width: 92%;
+    left: 4%;
+  }
+  .pop-inner {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+
 }
